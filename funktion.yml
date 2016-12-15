@@ -1,3 +1,5 @@
 rules:
-  - trigger: http://0.0.0.0:8080
-    action: io.fabric8.funktion.example.Main
+  - trigger: http
+    actions:
+     - kind: function
+       name: io.fabric8.funktion.example.Main::main
